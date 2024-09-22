@@ -7,13 +7,13 @@ class AllExpenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.only(top: 40),
-      child: CustomBackgroundContainer(
+    return  const Padding(
+      padding:  EdgeInsets.only(top: 40),
+      child:  CustomBackgroundContainer(
         child: Column(
           children: [
             SizedBox(height: 20,),
-            const AllExpensesHeader(),
+             AllExpensesHeader(),
             SizedBox(height: 16,),
             AllExpensesItemListView()
           ],
