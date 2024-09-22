@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../utils/app_styles.dart';
-import '../model_of_listTile.dart';
+import '../../models/model_of_listTile.dart';
 class ActiveDrawerItem extends StatelessWidget {
   const ActiveDrawerItem({super.key, required this.listTileModel});
   final ListTileModel listTileModel ;

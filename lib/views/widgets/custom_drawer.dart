@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_ui_dash_board/utils/app_images.dart';
-import 'package:responsive_ui_dash_board/views/model_of_listTile.dart';
+import 'package:responsive_ui_dash_board/models/model_of_listTile.dart';
 import 'package:responsive_ui_dash_board/views/widgets/active_and_inActive_widget.dart';
 import 'package:responsive_ui_dash_board/views/widgets/drawer_item_list_view.dart';
 import 'package:responsive_ui_dash_board/views/widgets/user_info_list_tile.dart';
@@ -18,8 +18,7 @@ class CustomDrawer extends StatelessWidget {
             const SliverToBoxAdapter(child:  SizedBox(height: 8,)),
             const DrawerItemListView(),
               SliverFillRemaining(
-                hasScrollBody: false
-                  ,
+                hasScrollBody: false,
                 child: Column(
                 children: [
                   const SizedBox(height: 20,),

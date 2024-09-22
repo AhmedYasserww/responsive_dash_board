@@ -30,7 +30,7 @@ static const TextStyle styleMedium20 = TextStyle(
 );
 static const TextStyle styleSemiBold20 = TextStyle(
     fontSize: 20 ,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
     color: Color(0xff064061)
 
 );
@@ -42,7 +42,7 @@ static const TextStyle styleRegular12 = TextStyle(
 );
 static const TextStyle styleSemiBold24 = TextStyle(
     fontSize: 24 ,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     color: Color(0xffFFFFFF)
 
 );

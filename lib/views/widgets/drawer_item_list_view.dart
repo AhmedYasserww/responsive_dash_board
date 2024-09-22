@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui_dash_board/views/model_of_listTile.dart';
+import 'package:responsive_ui_dash_board/models/model_of_listTile.dart';
 
 import 'drawer_item.dart';
 class DrawerItemListView extends StatefulWidget {
