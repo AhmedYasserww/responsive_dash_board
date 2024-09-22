@@ -46,4 +46,5 @@ class Assets {
   static const String assetsImagesWallet2Svg = 'assets/images/wallet-2.svg';
   static const String assetsImagesSettings = 'assets/images/setting.svg';
   static const String assetsImagesLogout= 'assets/images/logout.svg';
+  static const String assetsImagesBalance='assets/images/balance.svg';
 }

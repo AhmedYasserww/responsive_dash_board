@@ -4,6 +4,7 @@ class Assets {
 
   static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
   static const String imagesAvatar = 'assets/images/avatar.svg';
+  static const String imagesBalance = 'assets/images/balance.svg';
   static const String imagesCard = 'assets/images/card.svg';
   static const String imagesCardWithColor = 'assets/images/card_with_color.svg';
   static const String imagesConvertCard = 'assets/images/convert-card.svg';

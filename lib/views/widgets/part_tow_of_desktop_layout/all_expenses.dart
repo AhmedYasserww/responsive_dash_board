@@ -1,31 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_ui_dash_board/models/all_expenses_model.dart';
-import '../../../utils/app_images.dart';
+import 'package:responsive_ui_dash_board/views/widgets/part_tow_of_desktop_layout/all_expenses_item_list_view.dart';
+import 'package:responsive_ui_dash_board/views/widgets/part_tow_of_desktop_layout/custom_background_container.dart';
 import 'all_expenses_header.dart';
-import 'all_expenses_item.dart';
 class AllExpenses extends StatelessWidget {
   const AllExpenses({super.key});
 
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding:  EdgeInsets.only(top: 40),
-      child: Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(12)
-        ),
-
+      padding: const EdgeInsets.only(top: 40),
+      child: CustomBackgroundContainer(
         child: Column(
           children: [
             SizedBox(height: 20,),
             const AllExpensesHeader(),
             SizedBox(height: 16,),
-            AllExpensesItem(allExpensesModel: AllExpensesModel(image: Assets.assetsImagesInComeSvg, title: "dclvpdv", date: "April 2022", price: r"$2019"),)
+            AllExpensesItemListView()
           ],
         ),
       ),
     );
   }
 }
+
 
