@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-abstract class AppStyles{
+abstract class Styles{
 static const TextStyle styleRegular16 = TextStyle(
   fontSize: 16 ,
   fontWeight: FontWeight.w400,
@@ -9,14 +9,12 @@ static const TextStyle styleRegular16 = TextStyle(
 static const TextStyle styleMedium16 = TextStyle(
     fontSize: 16 ,
     fontWeight: FontWeight.w500,
-    color: Color(0xff064061)
-
+    color: Color(0xff064061),
 );
 static const TextStyle styleSemiBold16 = TextStyle(
     fontSize: 16 ,
-    fontWeight: FontWeight.w500,
-    color: Color(0xff064061)
-
+    fontWeight: FontWeight.w600,
+    color: Color(0xff064061),
 );
 static const TextStyle styleBold16 = TextStyle(
     fontSize: 16 ,
