@@ -11,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
         Text("Quick Invoice",style: Styles.styleSemiBold20,),
         CircleAvatar(
           backgroundColor: Color(0xffFAFAFA),
-          radius: 32,
+          radius: 24,
           child: Icon(Icons.add,color: Color(0xff4EB7F2),),
         )
       ],

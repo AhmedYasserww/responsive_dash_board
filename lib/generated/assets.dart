@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String fontsMontserratMedium = 'assets/fonts/Montserrat-Medium.ttf';
   static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
   static const String imagesAvatar = 'assets/images/avatar.svg';
   static const String imagesBalance = 'assets/images/balance.svg';

@@ -75,7 +75,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
             const SizedBox(height: 34,),
             Text(allExpensesModel.title,style: Styles.styleSemiBold16.copyWith(color: Colors.white),),
             const SizedBox(height: 8,),
-            Text(allExpensesModel.date,style: Styles.styleRegular14.copyWith(color: Color(0xffFAFAFA)),),
+            Text(allExpensesModel.date,style: Styles.styleRegular14.copyWith(color: const Color(0xffFAFAFA)),),
             const SizedBox(height: 16,),
             Text(allExpensesModel.price,style: Styles.styleSemiBold24.copyWith(color: Colors.white),),
             const SizedBox(height: 16,)

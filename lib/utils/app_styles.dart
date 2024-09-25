@@ -4,12 +4,12 @@ static const TextStyle styleRegular16 = TextStyle(
   fontSize: 16 ,
   fontWeight: FontWeight.w400,
   color: Color(0xff064061)
-
 );
 static const TextStyle styleMedium16 = TextStyle(
     fontSize: 16 ,
     fontWeight: FontWeight.w500,
     color: Color(0xff064061),
+    fontFamily: "Montserrat"
 );
 static const TextStyle styleSemiBold16 = TextStyle(
     fontSize: 16 ,
