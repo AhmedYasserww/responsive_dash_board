@@ -23,9 +23,9 @@ class AllExpensesItem extends StatelessWidget {
       },
       child: selectedItem
           ? ActiveAllExpensesItem(
-          key: ValueKey('active'), allExpensesModel: allExpensesModel)
+          key: const ValueKey('active'), allExpensesModel: allExpensesModel)
           : InActiveAllExpensesItem(
-          key: ValueKey('inactive'), allExpensesModel: allExpensesModel),
+          key: const ValueKey('inactive'), allExpensesModel: allExpensesModel),
     );
   }
 }

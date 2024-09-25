@@ -7,10 +7,12 @@ class Assets {
   static const String imagesAvatar = 'assets/images/avatar.svg';
   static const String imagesBalance = 'assets/images/balance.svg';
   static const String imagesCard = 'assets/images/card.svg';
+  static const String imagesCard2 = 'assets/images/card2.png';
   static const String imagesCardWithColor = 'assets/images/card_with_color.svg';
   static const String imagesConvertCard = 'assets/images/convert-card.svg';
   static const String imagesDashBoard = 'assets/images/dash_board.svg';
   static const String imagesFrame = 'assets/images/Frame.svg';
+  static const String imagesGallery = 'assets/images/gallery.svg';
   static const String imagesInCome = 'assets/images/in_come.svg';
   static const String imagesInvestment = 'assets/images/investment.svg';
   static const String imagesInvoice1 = 'assets/images/invoice1.svg';

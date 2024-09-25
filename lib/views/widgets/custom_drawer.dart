@@ -25,12 +25,14 @@ class CustomDrawer extends StatelessWidget {
                 child: Column(
                 children: [
                   const SizedBox(height: 20,),
-                 const Spacer(),
+                 const Spacer(
+                   flex: 3,
+                 ),
                   InActiveDrawerItem(listTileModel: ListTileModel(title: "Setting system", image: Assets.assetsImagesSettings)),
                   const SizedBox(height: 20,),
                   InActiveDrawerItem(listTileModel: ListTileModel(title: "Setting system", image: Assets.assetsImagesLogout)),
-                  const SizedBox(height: 48,),
-
+                //  const SizedBox(height: 48,),
+                //Spacer(flex: 1,)
                 ],
               )
               )
