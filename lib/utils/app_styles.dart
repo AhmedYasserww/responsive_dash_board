@@ -54,7 +54,7 @@ static const TextStyle styleRegular14 = TextStyle(
 );
 static const TextStyle styleSemiBold18 = TextStyle(
     fontSize: 18 ,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w600,
     color: Color(0xffFFFFFF)
 
 );
