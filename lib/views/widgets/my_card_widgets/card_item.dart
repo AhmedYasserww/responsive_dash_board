@@ -13,7 +13,9 @@ class CardItem extends StatelessWidget {
         aspectRatio: 420/215,
         child: Container(
           decoration:  ShapeDecoration(
-              image: const DecorationImage(image: AssetImage(Assets.assetsImagesCard2)),
+              image: const DecorationImage(
+                fit: BoxFit.fill,
+                  image: AssetImage(Assets.assetsImagesCard2)),
               color: const Color(0xff4EB7F2),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
