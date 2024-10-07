@@ -12,7 +12,6 @@ class MyCardAndTransactionHistorySection extends StatelessWidget {
       child: Column(
         children: [
           MyCardsSection(),
-         // SizedBox(height: 20,),
           Divider(
             color: Color(0xffF1F1F1),
             height: 40,
