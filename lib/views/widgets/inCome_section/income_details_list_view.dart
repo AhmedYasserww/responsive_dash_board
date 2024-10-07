@@ -7,12 +7,15 @@ class InComeDetailsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: items.length,
-        itemBuilder: (context,i){
-      return IncomeItemDetails(itemDetailsModel: items[i]);
-    });
+    return Column(
+      children: items.map((e)=>IncomeItemDetails(itemDetailsModel: e)).toList()
+    );
+    // return ListView.builder(
+    //   physics: const NeverScrollableScrollPhysics(),
+    //   shrinkWrap: true,
+    //   itemCount: items.length,
+    //     itemBuilder: (context,i){
+    //   return IncomeItemDetails(itemDetailsModel: items[i]);
+    // });
   }
 }

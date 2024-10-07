@@ -29,7 +29,6 @@ class AllExpensesAndQuickInvoiceSec extends StatelessWidget {
         const AllExpenses(),
         const SizedBox(height: 24),
         const QuickInvoice(),
-        const SizedBox(height: 100),
       ],
     );
   }
