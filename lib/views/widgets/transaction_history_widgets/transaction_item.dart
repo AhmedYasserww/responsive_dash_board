@@ -13,12 +13,12 @@ final TransactionModel transactionModel ;
         borderRadius: BorderRadius.circular(12)
       ),
       child: ListTile(
-        title: Text(transactionModel.title,style: Styles.styleSemiBold16.copyWith(color: const Color(0xff064061),),),
+        title: Text(transactionModel.title,style: Styles.styleSemiBold16(context).copyWith(color: const Color(0xff064061),),),
         subtitle: Padding(
           padding: const EdgeInsets.only(top: 4),
-            child: Text(transactionModel.date,style: Styles.styleRegular16.copyWith(color: const Color(0xffAAAAAA),),)),
+            child: Text(transactionModel.date,style: Styles.styleRegular16(context).copyWith(color: const Color(0xffAAAAAA),),)),
         trailing: Text(transactionModel.amount,
-          style: Styles.styleMedium20.copyWith(
+          style: Styles.styleMedium20(context).copyWith(
             color: transactionModel.isWithdrawal?const Color(0xffF3735E):const Color(0xff7DD97B)),),
       ),
     );

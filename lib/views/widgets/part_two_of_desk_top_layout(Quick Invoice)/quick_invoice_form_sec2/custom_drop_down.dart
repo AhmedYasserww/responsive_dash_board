@@ -15,7 +15,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Item mount",style: Styles.styleMedium16,),
+         Text("Item mount",style: Styles.styleMedium16(context),),
         const SizedBox(height: 12,),
         Container(
           width: double.infinity,

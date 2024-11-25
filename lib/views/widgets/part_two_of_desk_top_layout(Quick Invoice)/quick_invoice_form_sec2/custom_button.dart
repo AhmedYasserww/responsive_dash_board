@@ -15,7 +15,7 @@ final String text ;
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         color:backgroundColor?? const Color(0xff4DB7F2),
         onPressed: (){},
-        child: Text(text,style: Styles.styleSemiBold18.copyWith(color: textColor??Colors.white),) ,
+        child: Text(text,style: Styles.styleSemiBold18(context).copyWith(color: textColor??Colors.white),) ,
       ),
     );
   }

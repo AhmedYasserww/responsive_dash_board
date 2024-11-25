@@ -39,8 +39,8 @@ final ItemDetailsModel itemDetailsModel;
           color: itemDetailsModel.color,
             shape: const OvalBorder()),
       ),
-      title: Text(itemDetailsModel.title,style: Styles.styleRegular16,),
-        trailing: Text(itemDetailsModel.value,style: Styles.styleMedium16,),
+      title: Text(itemDetailsModel.title,style: Styles.styleRegular16(context),),
+        trailing: Text(itemDetailsModel.value,style: Styles.styleMedium16(context),),
     );
   }
 }

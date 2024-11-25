@@ -28,8 +28,8 @@ class CardItem extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 31,right: 45,top: 12),
                 child: ListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: Text("Name card",style: Styles.styleRegular16.copyWith(color: Colors.white),),
-                  subtitle: Text("Syah Bandi",style: Styles.styleMedium20.copyWith(color: Colors.white),),
+                  title: Text("Name card",style: Styles.styleRegular16(context).copyWith(color: Colors.white),),
+                  subtitle: Text("Syah Bandi",style: Styles.styleMedium20(context).copyWith(color: Colors.white),),
                   trailing: SvgPicture.asset(Assets.assetsImagesGallery),
                 ),
 
@@ -37,14 +37,14 @@ class CardItem extends StatelessWidget {
               const Spacer(),
               Padding(
                 padding: const EdgeInsets.only(right: 24),
-                child: Text("0918 8124 0042 8129",style: Styles.styleMedium20.copyWith(color: Colors.white),
+                child: Text("0918 8124 0042 8129",style: Styles.styleMedium20(context).copyWith(color: Colors.white),
 
                 ),
               ),
               Padding(
                   padding: const EdgeInsets.only(right: 24),
-                  child: Text("124 12/20-",style: Styles.styleRegular16.copyWith(color: Colors.white),)),
-              const SizedBox(height: 27,)
+                  child: Text("124 12/20-",style: Styles.styleRegular16(context).copyWith(color: Colors.white),)),
+              Flexible(child: const SizedBox(height: 27,))
 
             ],
           ),

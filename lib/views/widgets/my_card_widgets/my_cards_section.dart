@@ -31,7 +31,7 @@ pageController.addListener(() {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
          const SizedBox(height: 24,),
-         const Text("My card",style:Styles.styleSemiBold20,),
+          Text("My card",style:Styles.styleSemiBold20(context),),
          const SizedBox(height: 20,),
         MyCardsPageView(
           pageController: pageController,

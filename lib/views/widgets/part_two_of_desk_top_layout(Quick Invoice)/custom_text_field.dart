@@ -10,7 +10,7 @@ final String hintText;
           filled: true,
           fillColor: const Color(0xffFAFAFA),
           hintText:hintText ,
-          hintStyle: Styles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+          hintStyle: Styles.styleRegular16(context).copyWith(color: const Color(0xffAAAAAA)),
 
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),

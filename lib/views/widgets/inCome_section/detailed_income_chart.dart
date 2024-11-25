@@ -35,13 +35,13 @@ class _InComeChartState extends State<DetailedIncomeChart> {
         PieChartSectionData(
           titlePositionPercentageOffset: activeIndex==0?1.5:null,
           value: 40,
-          titleStyle: Styles.styleRegular16.copyWith(color:activeIndex==0?null: Colors.white),
+          titleStyle: Styles.styleRegular16(context).copyWith(color:activeIndex==0?null: Colors.white),
             radius: activeIndex == 0?60 : 50,
             title: activeIndex==0?'Design service':"40%", color: const Color(0xff208CC8)),
         PieChartSectionData(
             titlePositionPercentageOffset: activeIndex==1?2.1:null,
             value: 25,
-            titleStyle: Styles.styleRegular16.copyWith(color:activeIndex==1?null: Colors.white),
+            titleStyle: Styles.styleRegular16(context).copyWith(color:activeIndex==1?null: Colors.white),
             radius: activeIndex == 1?60 : 50,
     title: activeIndex==1?'Design Product':"25%", color: const Color(0xff4EB7F2)),
 
@@ -49,13 +49,13 @@ class _InComeChartState extends State<DetailedIncomeChart> {
             titlePositionPercentageOffset: activeIndex==2?1.4:null,
 
             value: 20,
-            titleStyle: Styles.styleRegular16.copyWith(color:activeIndex==2?null: Colors.white),
+            titleStyle: Styles.styleRegular16(context).copyWith(color:activeIndex==2?null: Colors.white),
             radius: activeIndex == 2?60 : 50,
     title: activeIndex==2?'Product royalti':"20%", color: const Color(0xff064061)),
         PieChartSectionData(
             titlePositionPercentageOffset: activeIndex==3?1.5:null,
             value: 22,
-            titleStyle: Styles.styleRegular16.copyWith(color:activeIndex==3?null: Colors.white),
+            titleStyle: Styles.styleRegular16(context).copyWith(color:activeIndex==3?null: Colors.white),
             radius: activeIndex == 3?60 : 50,
             title: activeIndex==3?'Other':"22%", color: const Color(0xffE2DECD)),
 

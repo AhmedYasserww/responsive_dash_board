@@ -11,7 +11,7 @@ class AllExpensesHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text("All Expenses",style:Styles.styleSemiBold20,),
+         Text("All Expenses",style:Styles.styleSemiBold20(context),),
         Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
@@ -23,10 +23,9 @@ class AllExpensesHeader extends StatelessWidget {
             child:  Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Monthly",style: Styles.styleMedium16.copyWith(color: Color(0xff064061))),
+                Text("Monthly",style: Styles.styleMedium16(context).copyWith(color: const Color(0xff064061))),
                 const SizedBox(width: 18,),
                 Transform.rotate(
-                  //القيمه هنا مش dgree هيا radians
                   angle:-1.571,
                     child: const Icon(Icons.arrow_back_ios_new_outlined,color: Color(0xff064061),size: 32,))
               ],

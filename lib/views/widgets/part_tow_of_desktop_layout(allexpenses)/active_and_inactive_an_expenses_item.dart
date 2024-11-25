@@ -31,11 +31,11 @@ class InActiveAllExpensesItem extends StatelessWidget {
               image: allExpensesModel.image,
             ),
             const SizedBox(height: 34,),
-            Text(allExpensesModel.title,style: Styles.styleSemiBold16,),
+            Text(allExpensesModel.title,style: Styles.styleSemiBold16(context),),
             const SizedBox(height: 8,),
-            Text(allExpensesModel.date,style: Styles.styleRegular14,),
+            Text(allExpensesModel.date,style: Styles.styleRegular14(context),),
             const SizedBox(height: 16,),
-            Text(allExpensesModel.price,style: Styles.styleSemiBold24.copyWith(color: const Color(0xff4EB7F2)),),
+            Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: const Color(0xff4EB7F2)),),
             const SizedBox(height: 16,)
 
           ],
@@ -73,11 +73,11 @@ class ActiveAllExpensesItem extends StatelessWidget {
               image: allExpensesModel.image,
             ),
             const SizedBox(height: 34,),
-            Text(allExpensesModel.title,style: Styles.styleSemiBold16.copyWith(color: Colors.white),),
+            Text(allExpensesModel.title,style: Styles.styleSemiBold16(context).copyWith(color: Colors.white),),
             const SizedBox(height: 8,),
-            Text(allExpensesModel.date,style: Styles.styleRegular14.copyWith(color: const Color(0xffFAFAFA)),),
+            Text(allExpensesModel.date,style: Styles.styleRegular14(context).copyWith(color: const Color(0xffFAFAFA)),),
             const SizedBox(height: 16,),
-            Text(allExpensesModel.price,style: Styles.styleSemiBold24.copyWith(color: Colors.white),),
+            Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: Colors.white),),
             const SizedBox(height: 16,)
 
           ],
