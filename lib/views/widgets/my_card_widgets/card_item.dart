@@ -44,7 +44,7 @@ class CardItem extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.only(right: 24),
                   child: Text("124 12/20-",style: Styles.styleRegular16(context).copyWith(color: Colors.white),)),
-              Flexible(child: const SizedBox(height: 27,))
+              const Flexible(child:  SizedBox(height: 27,))
 
             ],
           ),
