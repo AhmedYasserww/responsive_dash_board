@@ -100,7 +100,7 @@ double getScaleFactor(BuildContext context) {
   if (width < 600) {
     return width / 550;
   } else if (width < 1200) {
-    return width / 1120;
+    return width / 1000;
   } else {
     return width / 1550;
   }
