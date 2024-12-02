@@ -13,33 +13,37 @@ class InActiveAllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color:const Color(0xffF1F1F1),width: 1),
+        border: Border.all(color:const Color(0xFFF1F1F1),width: 1),
         borderRadius: BorderRadius.circular(12),
 
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 16,),
-            AllExpensesItemHeader(
-              imageColor: const Color(0xff4EB7F2),
-              iconColor: const Color(0xff064061),
-              image: allExpensesModel.image,
-            ),
-            const SizedBox(height: 34,),
-            Text(allExpensesModel.title,style: Styles.styleSemiBold16(context),),
-            const SizedBox(height: 8,),
-            Text(allExpensesModel.date,style: Styles.styleRegular14(context),),
-            const SizedBox(height: 16,),
-            Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: const Color(0xff4EB7F2)),),
-            const SizedBox(height: 16,)
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 16,),
+          AllExpensesItemHeader(
+            imageColor: const Color(0xff4EB7F2),
+            iconColor: const Color(0xff064061),
+            image: allExpensesModel.image,
+          ),
+          const SizedBox(height: 34,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+              child: Text(allExpensesModel.title,style: Styles.styleSemiBold16(context),)),
+          const SizedBox(height: 8,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+              child: Text(allExpensesModel.date,style: Styles.styleRegular14(context),)),
+          const SizedBox(height: 16,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+              child: Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: const Color(0xff4EB7F2)),)),
+          const SizedBox(height: 16,)
 
-          ],
-        ),
+        ],
       ),
     );
   }
@@ -55,33 +59,41 @@ class ActiveAllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
         color: const Color(0xff4EB7F2),
+        border: Border.all(color:const  Color(0xFF4DB7F2),width: 1),
         borderRadius: BorderRadius.circular(12),
 
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 16,),
-            AllExpensesItemHeader(
-              backGroundImageColor: Colors.white.withOpacity(.1),
-              iconColor:Colors.white ,
-              imageColor: Colors.white,
-              image: allExpensesModel.image,
-            ),
-            const SizedBox(height: 34,),
-            Text(allExpensesModel.title,style: Styles.styleSemiBold16(context).copyWith(color: Colors.white),),
-            const SizedBox(height: 8,),
-            Text(allExpensesModel.date,style: Styles.styleRegular14(context).copyWith(color: const Color(0xffFAFAFA)),),
-            const SizedBox(height: 16,),
-            Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: Colors.white),),
-            const SizedBox(height: 16,)
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 16,),
+          AllExpensesItemHeader(
+            backGroundImageColor: Colors.white.withOpacity(.1),
+            iconColor:Colors.white ,
+            imageColor: Colors.white,
+            image: allExpensesModel.image,
+          ),
+          const SizedBox(height: 34,),
+          FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(allExpensesModel.title,style: Styles.styleSemiBold16(context).copyWith(color: Colors.white),)),
+          const SizedBox(height: 8,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpensesModel.date,
+              style: Styles.styleRegular14(context).copyWith(color: const Color(0xffFAFAFA)),),
+          ),
+          const SizedBox(height: 16,),
+          FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(allExpensesModel.price,style: Styles.styleSemiBold24(context).copyWith(color: Colors.white),)),
+          const SizedBox(height: 16,)
 
-          ],
-        ),
+        ],
       ),
     );
   }

@@ -12,14 +12,22 @@ final Color iconColor;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          width: 60,
-          height: 60,
-          decoration:  ShapeDecoration(
-           color: backGroundImageColor?? const Color(0xffFAFAFA),
-              shape: const OvalBorder()
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                width: 60,
+                height: 60,
+                decoration:  ShapeDecoration(
+                 color: backGroundImageColor?? const Color(0xffFAFAFA),
+                    shape: const OvalBorder()
+                ),
+                child:Center(child: SvgPicture.asset(image,colorFilter:  ColorFilter.mode(imageColor??const Color(0xff4EB7F2), BlendMode.srcIn),),),
+              ),
+            ),
           ),
-          child:Center(child: SvgPicture.asset(image,colorFilter:  ColorFilter.mode(imageColor??const Color(0xff4EB7F2), BlendMode.srcIn),),),
         ),
 
         Transform.rotate(

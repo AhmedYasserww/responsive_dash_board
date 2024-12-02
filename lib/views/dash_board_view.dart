@@ -16,6 +16,7 @@ class _ResponsiveDashBoardState extends State<ResponsiveDashBoard> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.sizeOf(context).width);
     return Scaffold(
       key:scaffoldKey,
       appBar: MediaQuery.sizeOf(context).width<SizeConfig.tablet?AppBar(
